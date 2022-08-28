@@ -1,0 +1,29 @@
+ol {
+	list-style-type: circle;
+	color: black;
+	font: Rubik;
+	font-size: 50px;
+	font-weight: medium;
+	text-align: left;
+	text-shadow: 5px 5px 5px #FF69B4;
+}
+
+ul {
+	list-style-type: circle;
+	color: black;
+	font: Rubik;
+	font-size: 50px;
+	font-weight: medium;
+	text-align: left;
+	text-shadow: 5px 5px 5px #20B2AA;
+}
+
+h1 {
+	color: purple;
+	background-color: pink;
+	font: Rubik;
+	font-size: 50px;
+	font-weight: bold;
+	text-align: left;
+}
+	
