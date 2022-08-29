@@ -1,0 +1,39 @@
+ul {
+	color: darkgreen;
+}
+
+h1 {
+	color: CornflowerBlue;
+	text-align: center;
+	font: Veranda;
+	font-weight: bold;
+	font-size: 50px;
+}
+
+h2 {
+	color: CornflowerBlue;
+	text-align: center;
+	font: Veranda;
+	font-size: 42px;
+}
+
+h3 {
+	color: darkblue;
+	text-align: center;
+	font: Veranda;
+	font-size: 25px;
+}
+
+p {
+	text-align: center;
+}
+
+img {
+	display: block;
+	margin: 0px auto;
+}
+
+iframe {
+	display: block;
+	margin: 0px auto;
+}
