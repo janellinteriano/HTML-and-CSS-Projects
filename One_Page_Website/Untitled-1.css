@@ -14,7 +14,7 @@ body {
     font-family: "Helvetica Neue";
     line-height: 1.42857143;
     color: #333;
-    background-color: rgb(195, 208, 228);
+    background-color: #fff;
 }
 
 footer,
@@ -23,7 +23,7 @@ nav {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font: impact;
+    font-family: "Open Sans";
 }
 
 h1 {
@@ -32,7 +32,7 @@ h1 {
     font-size: 30px;
     text-transform: uppercase;
     text-align: center;
-    color: rgb(41, 57, 107);
+    color: #489267;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
 }
 
@@ -41,15 +41,14 @@ h1::after { /*This is the underline*/
     content: " ";
     height: 2px;
     width: 150px;
-    background: rgb(41, 57, 107);
+    background: #489267;
     margin: 5px auto 40px;
     box-shadow: 5px 2px 3px rgba(0, 0. 0. 0.5);
 }
 
 h2 {
     line-height: 50px;
-    color:#304796;
-    text-align: center;
+    color:#E91C1C;
 }
 
 h3 {
@@ -69,17 +68,6 @@ p {
     font-weight: 300;
     line-height: 30px;
     padding-bottom: 15px;
-    text-align: center;
-}
-
-.video1 {
-    float: center;
-
-}
-
-.video2 {
-    float: center;
-
 }
 
 .text-center {
@@ -120,13 +108,6 @@ section {
     margin-left: -15px;
 }
 
-.video-container {
-    text-align: right;
-    margin: 15px auto;
-    width: 300px;
-    height: 169px
-}
-
 
 .clearfix::after, /*:after is now ::after with a double colon*/
 .container::after,
@@ -151,7 +132,7 @@ section {
 
 .menu-container {
     max-height: 340px;
-    margin: 0% 32%;
+    margin: 0% auto;
     content: " ";
     /*top: 0;
     left: 0;*/
@@ -165,7 +146,7 @@ section {
 /*HOME SECTION STYLES*/
 
 #home {
-    background: url(background.webp) no-repeat 50% 50%;
+    background: url(../images/homepage.jpg) no-repeat 50% 50%;
     background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -182,12 +163,12 @@ section {
 .head-main {
     text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.9);
     font-variant: small-caps;
-    color: steelblue;
+    color: #fff;
     letter-spacing: 5pt;
     word-spacing: 21pt;
     font-size: 4.5em;
     text-align: left;
-    font: impact;
+    font-family: impact, sans-serif;
     line-height: 2;
     font-weight: 900;
     border: 5px double #fff;
@@ -216,13 +197,23 @@ section {
     display: flex;
     flex-wrap: wrap;
     padding: 10px;
-    border-radius: 0px;
+    border-radius: 8px;
     margin: 0px auto;
+    background-color: rgba(100, 65, 0, .3);
     box-shadow: 2px 2px 10px 0 rbga(0, 0, 0, 0.5);
 }
 
 #contact{
     background-color: #f5f3f3;
+}
+
+.reservation {
+    width: 60%;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 0px auto;
+    background-color: rgba(100, 65, 0, .3);
+    box-shadow: -1px -1px 1px 0 rgba(0, 0, 0, 1), 1px 2px 10px 0 rgba(0, 0, 0, 0.5);
 }
 
 .reservation h2 {
@@ -264,8 +255,8 @@ section {
     width: 70%;
     border: 1px solid #808080;
     margin: 2% auto;
-    border-radius: 0px;
-    background: lightsteelblue;
+    border-radius: 7px;
+    background: rgb(227, 222, 222);
     box-shadow: 2px 3px 3px 0px rgba(0, 0, 0, 0.3);
     font-family: 'Raleway';
 }
@@ -274,7 +265,7 @@ section {
     font-size: 15px;
     outline: none;
     font-weight: 600;
-    color: #dee6f0;
+    color: #8D8E8F;
     padding: 2% 1% 2% 7%;
     width: 80%;
     border-top: 1px solid #090B0D;
@@ -282,14 +273,14 @@ section {
     border-bottom: 2px solid #424549;
     border-left: 1px solid #090B0D;
     margin: 10px 1em;
-    border-radius: 0px;
+    border-radius: 7px;
     background: #13161B;
     box-shadow: inset 0px 3px 0px 0px rgba(5, 5, 5, 0.15);
     font-family: 'Raleway';
 }
 
 .reservation input[type="text"]:hover {
-    box-shadow: 0 0 18px rgba(13, 39, 95, 0.8);
+    box-shadow: 0 0 18px rgba(160, 76, 131, 0.8);
 }
 
 .form-spacer {
@@ -310,20 +301,20 @@ section {
     font-size: 18px;
     transition: border-color 0.3s color 0.3 background-color 0.3s;
     border-radius: 7px;
-    background-color: rgb(41, 57, 107);
+    background-color: #797a7b;
     box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.3);
 }
 
 .submit input[type="submit"]:hover {
     color: #000;
-    background-color: #4163ac;
+    background-color: #8D8E8F;
     box-shadow: inset 1px 2px 15px 0 rgba(0, 0, 0, 0.5);
 }
 
 /*FOOTER STYLES*/
 
 #footer {
-    background-color:lightsteelblue;
+    background-color: rgba(100, 65, 0, .3);
     color: #000;
     text-shadow: 2px 2px 8px 0 rgba(100, 65, 0, 1);
     padding: 20px 50px 20px 50px;
