@@ -3,8 +3,9 @@
 	<head>
 		<title>Whiskers Animal Shelter</title>
 		<meta charset="utf-8">
-		<link rel="stylesheet" type="text/css" href="one_page_website.css">
-		<link rel="stylesheet" type="text/css" href="animationopw.css">
+		<link rel="stylesheet" type="text/css" href="./CSS/one_page_website.css">
+		<link rel="stylesheet" type="text/css" href="./CSS/animationopw.css">
+		<script src = "./js/one_page_website.js" defer></script>
 	</head>
 
 	<body>	
@@ -33,95 +34,102 @@
 		
 		<!-- GALLERY -->
 		<section id="gallery">
-			<div class="container">
 				<h1>Gallery</h1>
-				<div class="flex-container">
+					<!-- Images used to open the lightbox -->
+					<div class="row">
+						<div class="column">
+						<img src="./images/small1.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+						</div>
+						<div class="column">
+						<img src="./images/small2.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+						</div>
+						<div class="column">
+						<img src="./images/small3.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
+						</div>
+						<div class="column">
+						<img src="./images/small4.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
+						</div>
+						<div class="column">
+						<img src="./images/small5.png" onclick="openModal();currentSlide(5)" class="hover-shadow">
+						</div>
+						<div class="column">
+						<img src="./images/small6.png" onclick="openModal();currentSlide(6)" class="hover-shadow">
+						</div>
+					</div>
 
-				
-					<!-- PHOTO CONTAINER 1 -->
-					<div class="photo-container">
-						<div class="photo">
-							<img src="https://phillypaws.org/wp-content/uploads/PAWSCalendar066.jpg" height=400 width=500 
-							alt="woman holding cat">
-							<div class="photo-overlay">
-								<h3>Click to Enlarge</h3>
-								<p>Visit our kitties today!</p>
-							</div>
-						</div>
-					</div>
-					<!-- END OF PHOTO-CONTAINER 1 -->
+					<!-- The Modal/Lightbox -->
+					<div id="myModal" class="modal">
+						<span class="close cursor" onclick="closeModal()">&times;</span>
+						<div class="modal-content">
 					
-					<!-- PHOTO CONTAINER 2 -->
-					<div class="photo-container">
-						<div class="photo">
-							<img src="https://bloximages.newyork1.vip.townnews.com/djournal.com/content/tncms/assets/v3/editorial/7/6b/76b4130e-bf42-5929-93a2-034c3ae4fec7/6174a333e9e7e.image.jpg?resize=1396%2C930" 
-							height=400 width=500 alt="brown cat in shelter cage">
-							<div class="photo-overlay">
-								<h3>Click to Enlarge</h3>
-								<p>Visit our kitties today!</p>
-							</div>
+						<div class="mySlides">
+							<div class="numbertext">1 / 4</div>
+							<img src="./images/big1.jpg" style="width:100%">
 						</div>
-					</div>
-					<!-- END OF PHOTO-CONTAINER 2 -->
 					
-					<!-- PHOTO CONTAINER 3 -->
-					<div class="photo-container">
-						<div class="photo">
-							<img src="https://cf.ltkcdn.net/cats/images/orig/306451-1600x1066-adopt-a-kitten.jpg" 
-							height=400 width=500 alt="person holding kitten">
-							<div class="photo-overlay">
-								<h3>Click to Enlarge</h3>
-								<p>Visit our kitties today!</p>
-							</div>
+						<div class="mySlides">
+							<div class="numbertext">2 / 4</div>
+							<img src="./images/big2.webp" style="width:100%">
 						</div>
-					</div>
-					<!-- END OF PHOTO-CONTAINER 3 -->
 					
-					<!-- PHOTO CONTAINER 4 -->
-					<div class="photo-container">
-						<div class="photo">
-							<img src="https://vcahospitals.com/-/media/2/vca/images/lifelearn-images-foldered/220/kitten_play_1scaler.ashx"  alt="orange cat playing with toy">
-							<div class="photo-overlay">
-								<h3>Click to Enlarge</h3>
-								<p>Visit our kitties today!</p>
-							</div>
+						<div class="mySlides">
+							<div class="numbertext">3 / 4</div>
+							<img src="./images/big3.jpg" style="width:100%">
 						</div>
-					</div>
-					<!-- END OF PHOTO-CONTAINER 4 -->
 					
-					<!-- PHOTO CONTAINER 5 -->
-					<div class="photo-container">
-						<div class="photo">
-							<img src="https://www.armandhammer.com/-/media/aah/feature/cat-litter/cat-litter-articlelist/04-adopting-a-cat-or-kitten.png" 
-							alt="woman smiling with kittens">
-							<div class="photo-overlay">
-								<h3>Click to Enlarge</h3>
-								<p>Visit our kitties today!</p>
-							</div>
+						<div class="mySlides">
+							<div class="numbertext">4 / 4</div>
+							<img src="./images/big4.jpg" style="width:100%">
 						</div>
-					</div>
-					<!-- END OF PHOTO-CONTAINER 5 -->
-					
-					<!-- PHOTO CONTAINER 6 -->
-					<div class="photo-container">
-						<div class="photo">
-							<img src="https://www.aspcapro.org/sites/default/files/styles/image_card_vertical/public/page/card/image/two_gray_kittens.jpg?itok=eI3tZ84Y" alt="two baby kittens">
-							<div class="photo-overlay">
-								<h3>Click to Enlarge</h3>
-								<p>Visit our kitties today!</p>
-							</div>
-						</div>
-					</div>
-					<!-- END OF PHOTO CONTAINER 6 -->
 
+						<div class="mySlides">
+							<div class="numbertext">4 / 4</div>
+							<img src="./images/big5.png" style="width:100%">
+						</div>
 
+						<div class="mySlides">
+							<div class="numbertext">4 / 4</div>
+							<img src="./images/big6.jpg" style="width:100%">
+						</div>
 
-				</div>
-			</div>
-		</section>
-		<!-- END OF GALLERY -->
+						<!-- Next/previous controls -->
+						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+						<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+						<!-- Caption text -->
+						<div class="caption-container">
+							<p id="caption"></p>
+						</div>
 					
+						<!-- Thumbnail image controls -->
+						<div class="column">
+							<img class="demo" src="./images/small1.png" onclick="currentSlide(1)" alt="holding kitten">
+						</div>
+					
+						<div class="column">
+							<img class="demo" src="./images/small2.png" onclick="currentSlide(2)" alt="cat lying down">
+						</div>
+					
+						<div class="column">
+							<img class="demo" src="./images/small3.png" onclick="currentSlide(3)" alt="lady holding cat">
+						</div>
+					
+						<div class="column">
+							<img class="demo" src="./images/small4.png" onclick="currentSlide(4)" alt="kitten playing with toy">
+						</div>
+
+						<div class="column">
+							<img class="demo" src="./images/small5.png" onclick="currentSlide(5)" alt="girl with cats">
+						</div>
+
+						<div class="column">
+							<img class="demo" src="./images/small6.png" onclick="currentSlide(6)" alt="two small kittens">
+						</div>
+						</div>
+					</div>
+
 					<!-- VIDEO CONTAINER 1 -->
+					<div>
 						<div class="video1">
 								<iframe width="560" height="315" src="https://www.youtube.com/embed/V5NK3XXSvVE" 
 								title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
@@ -132,6 +140,7 @@
 								 allowfullscreen></iframe>
 							</div>
 						</div>
+					</div>
 					<!--END OF VIDEO CONTAINER 1-->
 					
 		
