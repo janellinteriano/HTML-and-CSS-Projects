@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			/*Google Fonts*/
+			@import url('https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap');
+			@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+			/*Sets margin, padding, and font style for whole page*/
+			* {
+				margin: 0;
+				padding: 0;
+				font-family: 'Inter', sans-serif;
+			}
+			/*Background image that covers the whole page*/
+			body {
+				background: url(https://assets.vogue.com/photos/618e7c4badd0a25be01d750e/16:9/w_5295,h_2978,c_limit/GettyImages-1222654885.jpg) no-repeat;
+				background-size: cover;
+			}
+			/*Creates space for dropdown menu and logo, aligns items and adds padding*/
+			header {
+				position: fixed; 
+				background: rgb(148, 123, 99); 
+				display: flex; 
+				align-items: center; 
+				justify-content: space-between;
+				padding: 35px 6%; 
+				top: 0; left: 0; right: 0; 
+				z-index: 1000;
+			}
+			/*Creates hover effect that shows a border along the bottom of the menu*/
+			header:hover,
+			header:focus-within {
+				border-bottom: 10px solid rgb(95, 84, 60);
+			}
+			a {
+				text-decoration: none;
+			}
+			.logo {
+				color: whitesmoke;
+				font-weight: 900;
+				font-size: 45px;
+				letter-spacing: 2px;
+				padding-left: 5%;
+			}
+			/*Styling to ensure the dropdown and hover effects line up with the border*/
+			header .navbar {
+				height: 20px;
+				min-width: fit-content;
+			}
+			header .navbar ul {
+				list-style: none;
+			}
+			/*Affects the first links in the submenus only, creates more precise hover effect*/
+			header .navbar ul .top-sub {
+				padding-top: 9.5px;
+			}
+			/*Lines menu catagories from left to right*/
+			header .navbar ul li {
+				float: left;
+				position: relative;
+				margin-right: 48px;
+			}
+			/*Creates hover effect for menu items and makes the top border round*/
+			header .navbar ul li:hover, 
+			header .navbar ul li:focus-within {
+				background-color: rgb(95, 84, 60);
+				border-top-left-radius: 5px;
+				border-top-right-radius: 5px;
+			}
+			/*Text styling for menu items*/
+			header .navbar ul li a {
+				padding-top: 10px;
+				padding-right: 15px;
+				padding-bottom: 35px;
+				padding-left: 15px;
+				font-size: 24px;
+				font-weight: 500;
+				letter-spacing: 2.5px;
+				width: 100%;
+				display: block;
+				text-decoration: none;
+				color: whitesmoke;
+			}	
+			/*Styles submenus by rounding bottom borders, adding color, and making position absolute on page*/
+			header .navbar ul li ul {
+				position: absolute;
+				width: 300px;
+				background-color: rgb(95, 84, 60);
+				display: none;
+				border-bottom-left-radius: 5px;
+				border-bottom-right-radius: 5px;
+			}
+			/*Styles text for submenu and adds shadow effect for each item*/
+			header .navbar ul li ul li a {
+				font-size: 14.5px;
+				padding: 25px;
+				color: whitesmoke;
+				letter-spacing: 2.5px;
+				text-shadow: 1.5px 1.5px rgb(46, 46, 46);
+				width: 250px;
+				text-align: center;
+			}
+			/*Adds hover effect for submenu only*/
+			header .navbar ul li ul li a:hover,
+			header .navbar ul li ul li a:focus-within {
+				background-color: rgb(148, 123, 99);
+				width: 250px;
+				border-bottom-left-radius: 5px;
+				border-bottom-right-radius: 5px;
+			}
+			/*Makes hidden submenu items visible when hovered/clicked on*/
+			header .navbar ul li:focus-within > ul,
+			header .navbar ul li:hover {
+				display: block;
+			}
+		</style>
+		<meta charset="utf-8">
+		<title>Janell Interiano - Menu</title>
+	</head>
+	<body>
+		<header> 
+			<!--GETUWIRED Logo-->
+			<a href="#" class="logo">Cafe De Flore</a>
+			<!--Rest of Dropdown Menu-->
+			<nav class="navbar">
+				<ul>
+					<li><a href="#">ABOUT</a>
+						<ul>
+							<li class="top-sub"><a href="#">OUR STORY</a></li>
+							<li><a href="#">OUR COMMITMENT TO YOU</a></li>
+						</ul>
+					</li>
+					<li><a href="#">LOCATIONS</a>
+						<ul>
+							<li class="top-sub"><a href="#">AUSTIN, TX</a></li>
+							<li><a href="#">ATLANTA, GA</a></li>
+							<li><a href="#">SEATTLE, WA</a></li>
+							<li><a href="#">PORTLAND, OR</a></li>
+						</ul>
+					</li>
+					<li><a href="#">PRODUCTS</a>
+						<ul>
+							<li class="top-sub"><a href="#">COFFEE BEANS</a></li>
+							<li><a href="#">MUGS</a></li>
+							<li><a href="#">TUMBLER CUPS</a></li>
+							<li><a href="#">CUP HOLDERS</a></li>
+						</ul>
+					</li>
+					<li><a href="#">MENU</a></li>
+					<li><a href="#">CONTACT US</a></li>
+				</ul>
+			</nav>
+		</header>
+	</body>
+</html>
